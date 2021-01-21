@@ -1,0 +1,52 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class Tarea1Junit {
+
+	/**
+	 * Test method for {@link Radios#amFm()}.
+	 */
+	@Test
+	void testAmFm() {
+		Radios Ra = new Radios();
+		boolean resultado = Ra.amFm();
+		assertEquals(false,resultado);
+	}
+
+	/**
+	 * Test method for {@link Radios#guardar(int)}.
+	 */
+	@Test
+	void testGuardar() {
+		Radios Ra = new Radios();
+		String resultado = Ra.guardar(1);
+		assertEquals("Su estacion se ha guardado en el boton: "+1,resultado);
+	}
+
+	/**
+	 * Test method for {@link Radios#seleccionar(int)}.
+	 */
+	@Test
+	void testSeleccionar() {
+		Radios Ra = new Radios();
+		String resultado = Ra.seleccionar(1);
+		assertEquals("\nNo hay ninguna estacion guardada\n",resultado);
+	}
+
+	/**
+	 * Test method for {@link Radios#avanzar()}.
+	 */
+	@Test
+	void testAvanzar() {
+		Radios Ra = new Radios();
+		double resultado = Ra.avanzar();
+		assertEquals(10.0,resultado);
+	}
+
+	/**
+	 * Test method for {@link Radios#toString()}.
+	 */
+}
