@@ -1,17 +1,17 @@
 import java.util.*;
 
 class Radios implements Interface{
-    String s;
-    double estacion = 0;
-    boolean encendido = false; //false es apagado y true significa encendido
-    boolean radio = true; //True es am false es fm
-    String mensajeguardar ;
-    String mensajeseleccionar;
-    ArrayList<Double> guardadas = new ArrayList<Double>();
-    double maxa = 1610;
-    double mina = 530;
-    double maxf = 107.9;
-    double minf = 87.9;
+    private String s;
+    private double estacion = 0;
+    private boolean encendido = false; //false es apagado y true significa encendido
+    private boolean radio = true; //True es am false es fm
+    private String mensajeguardar ;
+    private String mensajeseleccionar;
+    private ArrayList<Double> guardadas = new ArrayList<Double>();
+    private double maxa = 1610;
+    private double mina = 530;
+    private double maxf = 107.9;
+    private double minf = 87.9;
 
     public Radios(){
         for(int i = 0; i<12; i++){
